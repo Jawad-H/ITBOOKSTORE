@@ -104,7 +104,7 @@ function SingleProduct() {
     };
     useEffect(() => {
         const getSingleBook = async () => {
-            const res = await axios.get(`https://itbookstoreapi.herokuapp.com/api/api/products/find/${id}`);
+            const res = await axios.get(`https://itbookstoreapi.herokuapp.com/api/products/find/${id}`);
             setSingleBook(res.data);
         }
         getSingleBook();
