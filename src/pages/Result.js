@@ -217,7 +217,7 @@ function Result() {
 
     useEffect(() => {
         const discountItem = async () => {
-            const res = await axios.get(`http://localhost:5000/api/products?category=${cat}`)
+            const res = await axios.get(`https://itbookstoreapi.herokuapp.com/api/products?category=${cat}`)
             setItem(res.data)
         }
         discountItem();
